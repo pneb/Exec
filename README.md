@@ -11,8 +11,11 @@ Exec is a program that executes any Python code in a given executable with the s
 `git clone https://github.com/pneb/Exec.git`
 
 ## Usage
-`cd Exec
-python3 main.py`
+```bash
+cd Exec
+
+python3 main.py
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
