@@ -1,11 +1,9 @@
 import psutil
 
-def is_running(program_file):
-    program_file = program_file.replace("\\", "/")
+def is_running(process_name):
     for process in psutil.process_iter():
         try:
-            filename = process.exe().replace("\\", "/")
-            if filename == program_file:
+            if process.name() == process_name:
                 return True
         except:
             pass
